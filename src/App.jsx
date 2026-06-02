@@ -1,33 +1,25 @@
 
-import UserCard from './UserCard';
+import UserCard from './assets/components/UserCard';
 // import Blog from './Blog';
+import UserCards from './assets/components/Exercise3/UserCards';
 
 const App = () => {
   return (
     <div>
-      <UserCard name="John Doe"
+      <UserCards name="John Doe"
        email="john.doe@example.com" />
-       <UserCard name="Jane Smith"
+       <UserCards name="Jane Smith"
         email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
+       <UserCards name="Jane Smith"
         email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
+       <UserCards name="Jane Smith"
         email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
+       <UserCards name="Jane Smith"
         email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
-        email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
-        email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
-        email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
-        email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
-        email="jane.smith@example.com" />
-       <UserCard name="Jane Smith"
+       <UserCards name="Jane Smith"
         email="jane.smith@example.com" />
       {/* <Blog /> */}
+      {/* <UserCard /> */}
 
     </div>
   );

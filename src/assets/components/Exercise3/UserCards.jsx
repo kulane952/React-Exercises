@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const UserCard = ({ name, email }) => {
+const UserCards = ({ name, email }) => {
     return (
         <div>
             <h2>{name}</h2>
@@ -9,9 +9,9 @@ const UserCard = ({ name, email }) => {
     );
 };
 
-UserCard.propTypes = {
+UserCards.propTypes = {
     name: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
 }
 
-export default UserCard;
+export default UserCards;
