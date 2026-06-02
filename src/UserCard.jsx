@@ -1,29 +1,17 @@
-// const UserCard = () => {
-//   return (
-//     <div>
-//     <h2>John Doe</h2>
-//     <p>john.doe@example.com</p>
-//     </div>
-//   )
-// }
+import PropTypes from "prop-types";
 
-// export default UserCard;
-
-
-
-
-
-
-
-
-// UserCard.jsx
-const UserCard = () => {
-  return (
-    <div>
-      <h2>John Doe</h2>
-      <p>john.doe@example.com</p>
-    </div>
-  );
+const UserCard = ({ name, email }) => {
+    return (
+        <div>
+            <h2>{name}</h2>
+            <p>{email}</p>
+        </div>
+    );
 };
+
+UserCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+}
 
 export default UserCard;
