@@ -1,26 +1,13 @@
 
 // import UserCard from './UserCard';
-
-// const App=()=>{
-//   return(
-//     <div>
-//       <UserCard />
-//     </div>
-//   )
-// }
-
-// export default App;
-
-
-
-
-// App.jsx
-import UserCard from './UserCard';
+import Blog from './Blog';
 
 const App = () => {
   return (
     <div>
-      <UserCard />
+      {/* <UserCard /> */}
+      <Blog />
+
     </div>
   );
 };
