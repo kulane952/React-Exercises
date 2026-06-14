@@ -4,6 +4,7 @@ const ShoppingCart = () => {
   const [products, setProducts] = useState([]);
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
+  const [editName, setEditName] = useState("");
 
   // Add Product
   const handleAddProduct = () => {
@@ -52,10 +53,23 @@ const ShoppingCart = () => {
     setProducts(updatedProducts);
   };
 
+  // Update Product
+  const updateProduct = (id) => {
+    if (!editName.trim()) return;
+
+    const updatedProducts = products.map((product) =>
+      product.id === id
+        ? { ...product, name: editName }
+        : product
+    );
+
+    setProducts(updatedProducts);
+    setEditName("");
+  };
+
   // Total Price
   const totalPrice = products.reduce(
-    (total, product) =>
-      total + product.price * product.quantity,
+    (total, product) => total + product.price * product.quantity,
     0
   );
 
@@ -82,6 +96,14 @@ const ShoppingCart = () => {
           onChange={(e) => setProductPrice(e.target.value)}
         />
 
+        {/* Edit Input */}
+        <input
+          type="text"
+          placeholder="New Product Name"
+          value={editName}
+          onChange={(e) => setEditName(e.target.value)}
+        />
+
         <button onClick={handleAddProduct}>
           Add to Cart
         </button>
@@ -99,40 +121,29 @@ const ShoppingCart = () => {
 
                 <div>
                   Quantity:
-
-                  <button
-                    onClick={() =>
-                      decreaseQuantity(product.id)
-                    }
-                  >
+                  <button onClick={() => decreaseQuantity(product.id)}>
                     -
                   </button>
 
                   {product.quantity}
 
-                  <button
-                    onClick={() =>
-                      increaseQuantity(product.id)
-                    }
-                  >
+                  <button onClick={() => increaseQuantity(product.id)}>
                     +
                   </button>
                 </div>
 
-                <button
-                  onClick={() =>
-                    removeProduct(product.id)
-                  }
-                >
+                <button onClick={() => removeProduct(product.id)}>
                   Remove
+                </button>
+
+                <button onClick={() => updateProduct(product.id)}>
+                  Update
                 </button>
               </li>
             ))}
           </ul>
 
-          <h4>
-            Total Price: ${totalPrice.toFixed(2)}
-          </h4>
+          <h4>Total Price: ${totalPrice.toFixed(2)}</h4>
         </div>
       ) : (
         <p>The cart is empty.</p>

@@ -6,7 +6,8 @@
 // import ListItems from './ListItems';
 
 // import Netflix from './Netflix';
-import ShoppingCart from './assets/components/Exercise5/ShoppingCart'
+// import ShoppingCart from './assets/components/Exercise5/ShoppingCart'
+import TitleUpdater from './assets/components/Exercise6/GreetingTitle'
 import { useState } from 'react';
 
 const App = () => {
@@ -74,7 +75,8 @@ const App = () => {
 
 
     <div>
-      <ShoppingCart />
+      <TitleUpdater/>
+      {/* <ShoppingCart /> */}
       {/* <ToggleButton />
       <ListItems />
       <Netflix />
