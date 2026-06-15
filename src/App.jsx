@@ -8,7 +8,10 @@
 // import Netflix from './Netflix';
 // import ShoppingCart from './assets/components/Exercise5/ShoppingCart'
 // import TitleUpdater from './assets/components/Exercise6/GreetingTitle'
-import MouseTracker from './assets/components/Exercise7/MouseTracker'
+// import MouseTracker from './assets/components/Exercise7/MouseTracker'
+// import SeTimer from './assets/components/SetTime'
+import Countdown from './assets/components/Exercise8/CountdownTimer'
+
 
 import { useState } from 'react';
 
@@ -77,8 +80,10 @@ const App = () => {
 
 
     <div>
+      {/* <SeTimer/> */}
+      <Countdown/>
       {/* <TitleUpdater/> */}
-      <MouseTracker/>
+      {/* <MouseTracker/> */}
       {/* <ShoppingCart /> */}
       {/* <ToggleButton />
       <ListItems />
