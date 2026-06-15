@@ -10,7 +10,8 @@
 // import TitleUpdater from './assets/components/Exercise6/GreetingTitle'
 // import MouseTracker from './assets/components/Exercise7/MouseTracker'
 // import SeTimer from './assets/components/SetTime'
-import Countdown from './assets/components/Exercise8/CountdownTimer'
+// import Countdown from './assets/components/Exercise8/CountdownTimer'
+import GitHubUserSearch from './assets/components/Exercise9/GitHubUserSearch '
 
 
 import { useState } from 'react';
@@ -80,8 +81,9 @@ const App = () => {
 
 
     <div>
+      <GitHubUserSearch/>
       {/* <SeTimer/> */}
-      <Countdown/>
+      {/* <Countdown/> */}
       {/* <TitleUpdater/> */}
       {/* <MouseTracker/> */}
       {/* <ShoppingCart /> */}
