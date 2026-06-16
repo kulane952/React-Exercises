@@ -11,7 +11,10 @@
 // import MouseTracker from './assets/components/Exercise7/MouseTracker'
 // import SeTimer from './assets/components/SetTime'
 // import Countdown from './assets/components/Exercise8/CountdownTimer'
-import GitHubUserSearch from './assets/components/Exercise9/GitHubUserSearch '
+// import GitHubUserSearch from './assets/components/Exercise9/GitHubUserSearch '
+import UserList from './assets/components/Exercise10/UserList'
+
+// import Profile from './Prop'
 
 
 import { useState } from 'react';
@@ -43,7 +46,7 @@ const App = () => {
   //   setName(event.target.value);
   // }
 
-//Drack mode
+  //Drack mode
   // const [Drack, setDrack] = useState(false);
 
   // const toggleDrack = () => {
@@ -65,23 +68,56 @@ const App = () => {
   // const toggleTabs=(tab)=>{
   //   setTabs(tab);
   // }
-// const [passwor, setPassword] = useState("124");
+  // const [passwor, setPassword] = useState("124");
 
-// const handleChange=(event)=>{
-//   setPassword(!passwor);
-// }
+  // const handleChange=(event)=>{
+  //   setPassword(!passwor);
+  // }
 
-// const [AccordionFAQ,setAccordion] = useState();
+  // const [AccordionFAQ,setAccordion] = useState();
 
-// const toggleAccordion=(index)=>{
-//   setAccordion(AccordionFAQ === index ? null : index);
-// }
+  // const toggleAccordion=(index)=>{
+  //   setAccordion(AccordionFAQ === index ? null : index);
+  // }
+
+  const users = [
+    { id: 1, name: "anas", email: "anas@gmail.com" },
+   
+
+  ]
 
   return (
 
 
+
     <div>
-      <GitHubUserSearch/>
+      <UserList users={users}
+
+
+      />
+
+      {/* <Profile
+        image="https://i.pravatar.cc/150?img=1"
+        name="Anis"
+        job="Frontend Developer"
+      />
+      <Profile
+        image="https://i.pravatar.cc/150?img=2"
+        name="Ahmed"
+        job="UI Designer"
+      />
+      <Profile
+        image="https://i.pravatar.cc/150?img=2"
+        name="Ahmed"
+        job="UI Designer"
+      />
+      <Profile
+        image="https://i.pravatar.cc/150?img=2"
+        name="Ahmed"
+        job="UI Designer" */}
+      {/* /> */}
+
+      {/* <GitHubUserSearch/> */}
       {/* <SeTimer/> */}
       {/* <Countdown/> */}
       {/* <TitleUpdater/> */}
@@ -130,10 +166,10 @@ const App = () => {
 
       {/* //LIKE BUTTON */}
 
-        {/* <button onClick={toggleLike}>
+      {/* <button onClick={toggleLike}>
           {liked ? "Unlike" : "Like"} ({count})
         </button> */}
-        {/* //TABS home about contact */}
+      {/* //TABS home about contact */}
 
       {/* <button
         onClick={() => toggleTabs("Home")}
@@ -157,14 +193,14 @@ const App = () => {
       </button>
 
       <h1>{Tabs}</h1> */}
-{/* 
+      {/* 
        <button onClick={handleChange}>{passwor ? "Hide" : "Show"} meassage</button>
         {passwor &&   <p>password:{'123456'}</p>}  */}
 
 
-        {/* //AccordionFAQ */}
+      {/* //AccordionFAQ */}
 
-       {/* < button onClick={() => toggleAccordion(0)}>
+      {/* < button onClick={() => toggleAccordion(0)}>
           What is React?
         </button>
         {AccordionFAQ === 0 && <p>React is a JavaScript library for building user interfaces.</p>}
@@ -180,7 +216,7 @@ const App = () => {
         {AccordionFAQ === 2 && <p>State is a built-in object that allows components to manage and update their own data.</p>} */}
 
 
-    </div>  
+    </div>
 
   );
 };
