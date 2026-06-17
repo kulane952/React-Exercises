@@ -13,7 +13,8 @@
 // import Countdown from './assets/components/Exercise8/CountdownTimer'
 // import GitHubUserSearch from './assets/components/Exercise9/GitHubUserSearch '
 // import UserList from './assets/components/Exercise10/UserList'
-import LoginForm from './assets/components/Exercise11/LoginForm'
+// import LoginForm from './assets/components/Exercise11/LoginForm'
+import Counter from './assets/components/Exercise12/Counter'
 
 // import Profile from './Prop'
 // import Greeting from './Greeting'
@@ -100,7 +101,8 @@ const App = () => {
 
   return (
     <div>
-      <LoginForm/>
+      <Counter/>
+      {/* <LoginForm/> */}
       {/* <ToggleMessage /> */}
       {/* <Navication underMessage={underMessage}/> */}
       {/* <Greeting isLoggedIn={isLoggedIn} /> */}
