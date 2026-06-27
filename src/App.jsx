@@ -17,7 +17,8 @@
 // import Counter from './assets/components/Exercise12/Counter'
 import './index.css';
 
-import TodoApp from './assets/components/Exercise19/TodoApp'
+// import TodoApp from './assets/components/Exercise19/TodoApp'
+import TodoApps from './assets/components/Exercise20/TodoApps'
 
 // import Profile from './Prop'
 // import Greeting from './Greeting'
@@ -104,7 +105,8 @@ const App = () => {
 
   return (
     <div>
-      <TodoApp/>
+      <TodoApps/>
+      {/* <TodoApp/> */}
       {/* <Counter/> */}
       {/* <LoginForm/> */}
       {/* <ToggleMessage /> */}
